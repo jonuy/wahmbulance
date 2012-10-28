@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC1EE6881619304100D48F30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1EE6871619304100D48F30 /* UIKit.framework */; };
+		FC1EE68A1619304100D48F30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1EE6891619304100D48F30 /* Foundation.framework */; };
+		FC1EE68C1619304100D48F30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1EE68B1619304100D48F30 /* CoreGraphics.framework */; };
+		FC1EE6921619304100D48F30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC1EE6901619304100D48F30 /* InfoPlist.strings */; };
+		FC1EE6941619304100D48F30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1EE6931619304100D48F30 /* main.m */; };
+		FC1EE6981619304100D48F30 /* WAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1EE6971619304100D48F30 /* WAAppDelegate.m */; };
+		FC1EE69B1619304100D48F30 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1EE6991619304100D48F30 /* MainStoryboard.storyboard */; };
+		FC1EE6B01619306B00D48F30 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1EE6AF1619306B00D48F30 /* CoreLocation.framework */; };
+		FC1EE6B21619307200D48F30 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1EE6B11619307200D48F30 /* MapKit.framework */; };
+		FC42BFA81623C74500AF63FB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC42BFA71623C74500AF63FB /* CFNetwork.framework */; };
+		FC42BFAA1623C75300AF63FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC42BFA91623C75300AF63FB /* SystemConfiguration.framework */; };
+		FC42BFAC1623C7C600AF63FB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC42BFAB1623C7C600AF63FB /* MobileCoreServices.framework */; };
+		FC42BFB01623CF1500AF63FB /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC42BFAF1623CF1500AF63FB /* libz.1.1.3.dylib */; };
+		FC42BFCE1623D32900AF63FB /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFBB1623D32900AF63FB /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC42BFCF1623D32900AF63FB /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFBE1623D32900AF63FB /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC42BFD01623D32900AF63FB /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFC01623D32900AF63FB /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC42BFD11623D32900AF63FB /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFC21623D32900AF63FB /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC42BFD21623D32900AF63FB /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFC41623D32900AF63FB /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC42BFD31623D32900AF63FB /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFC61623D32900AF63FB /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC42BFD41623D32900AF63FB /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFCA1623D32900AF63FB /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC42BFD51623D32900AF63FB /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFCC1623D32900AF63FB /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC42BFF01623D35700AF63FB /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFD81623D35700AF63FB /* NSObject+SBJson.m */; };
+		FC42BFF11623D35700AF63FB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFDB1623D35700AF63FB /* SBJsonParser.m */; };
+		FC42BFF21623D35700AF63FB /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFDD1623D35700AF63FB /* SBJsonStreamParser.m */; };
+		FC42BFF31623D35700AF63FB /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFDF1623D35700AF63FB /* SBJsonStreamParserAccumulator.m */; };
+		FC42BFF41623D35700AF63FB /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFE11623D35700AF63FB /* SBJsonStreamParserAdapter.m */; };
+		FC42BFF51623D35700AF63FB /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFE31623D35700AF63FB /* SBJsonStreamParserState.m */; };
+		FC42BFF61623D35700AF63FB /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFE51623D35700AF63FB /* SBJsonStreamWriter.m */; };
+		FC42BFF71623D35700AF63FB /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFE71623D35700AF63FB /* SBJsonStreamWriterAccumulator.m */; };
+		FC42BFF81623D35700AF63FB /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFE91623D35700AF63FB /* SBJsonStreamWriterState.m */; };
+		FC42BFF91623D35700AF63FB /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFEB1623D35700AF63FB /* SBJsonTokeniser.m */; };
+		FC42BFFA1623D35700AF63FB /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFED1623D35700AF63FB /* SBJsonUTF8Stream.m */; };
+		FC42BFFB1623D35700AF63FB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFEF1623D35700AF63FB /* SBJsonWriter.m */; };
+		FC42BFFF1623D5EC00AF63FB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42BFFE1623D5EC00AF63FB /* MBProgressHUD.m */; };
+		FC42C0041623D61100AF63FB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42C0031623D61100AF63FB /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC92D77D161AAF9700D9BCBA /* WAResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC92D77C161AAF9700D9BCBA /* WAResultsViewController.m */; };
+		FC92D780161AB1D700D9BCBA /* WAHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC92D77F161AB1D700D9BCBA /* WAHistoryViewController.m */; };
+		FC92D783161AB24A00D9BCBA /* WAContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC92D782161AB24A00D9BCBA /* WAContactViewController.m */; };
+		FCEE0051162A690900EB83C6 /* WALocation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEE0050162A690900EB83C6 /* WALocation.m */; };
+		FCF430C0162B931600C274DC /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = FCF430BE162B931600C274DC /* mail.png */; };
+		FCF430C1162B931600C274DC /* mail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCF430BF162B931600C274DC /* mail@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC1EE6831619304100D48F30 /* Wahmbulance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wahmbulance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1EE6871619304100D48F30 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FC1EE6891619304100D48F30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FC1EE68B1619304100D48F30 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FC1EE68F1619304100D48F30 /* Wahmbulance-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wahmbulance-Info.plist"; sourceTree = "<group>"; };
+		FC1EE6911619304100D48F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC1EE6931619304100D48F30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC1EE6951619304100D48F30 /* Wahmbulance-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wahmbulance-Prefix.pch"; sourceTree = "<group>"; };
+		FC1EE6961619304100D48F30 /* WAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAAppDelegate.h; sourceTree = "<group>"; };
+		FC1EE6971619304100D48F30 /* WAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAAppDelegate.m; sourceTree = "<group>"; };
+		FC1EE69A1619304100D48F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FC1EE6AF1619306B00D48F30 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FC1EE6B11619307200D48F30 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FC42BFA71623C74500AF63FB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FC42BFA91623C75300AF63FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FC42BFAB1623C7C600AF63FB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FC42BFAF1623CF1500AF63FB /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		FC42BFBA1623D32900AF63FB /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = Wahmbulance/ASIHTTPRequest/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		FC42BFBB1623D32900AF63FB /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = Wahmbulance/ASIHTTPRequest/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		FC42BFBC1623D32900AF63FB /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = Wahmbulance/ASIHTTPRequest/ASICacheDelegate.h; sourceTree = "<group>"; };
+		FC42BFBD1623D32900AF63FB /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = Wahmbulance/ASIHTTPRequest/ASIDataCompressor.h; sourceTree = "<group>"; };
+		FC42BFBE1623D32900AF63FB /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = Wahmbulance/ASIHTTPRequest/ASIDataCompressor.m; sourceTree = "<group>"; };
+		FC42BFBF1623D32900AF63FB /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = Wahmbulance/ASIHTTPRequest/ASIDataDecompressor.h; sourceTree = "<group>"; };
+		FC42BFC01623D32900AF63FB /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = Wahmbulance/ASIHTTPRequest/ASIDataDecompressor.m; sourceTree = "<group>"; };
+		FC42BFC11623D32900AF63FB /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = Wahmbulance/ASIHTTPRequest/ASIDownloadCache.h; sourceTree = "<group>"; };
+		FC42BFC21623D32900AF63FB /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = Wahmbulance/ASIHTTPRequest/ASIDownloadCache.m; sourceTree = "<group>"; };
+		FC42BFC31623D32900AF63FB /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = Wahmbulance/ASIHTTPRequest/ASIFormDataRequest.h; sourceTree = "<group>"; };
+		FC42BFC41623D32900AF63FB /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = Wahmbulance/ASIHTTPRequest/ASIFormDataRequest.m; sourceTree = "<group>"; };
+		FC42BFC51623D32900AF63FB /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = Wahmbulance/ASIHTTPRequest/ASIHTTPRequest.h; sourceTree = "<group>"; };
+		FC42BFC61623D32900AF63FB /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = Wahmbulance/ASIHTTPRequest/ASIHTTPRequest.m; sourceTree = "<group>"; };
+		FC42BFC71623D32900AF63FB /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = Wahmbulance/ASIHTTPRequest/ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		FC42BFC81623D32900AF63FB /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = Wahmbulance/ASIHTTPRequest/ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		FC42BFC91623D32900AF63FB /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = Wahmbulance/ASIHTTPRequest/ASIInputStream.h; sourceTree = "<group>"; };
+		FC42BFCA1623D32900AF63FB /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = Wahmbulance/ASIHTTPRequest/ASIInputStream.m; sourceTree = "<group>"; };
+		FC42BFCB1623D32900AF63FB /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = Wahmbulance/ASIHTTPRequest/ASINetworkQueue.h; sourceTree = "<group>"; };
+		FC42BFCC1623D32900AF63FB /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = Wahmbulance/ASIHTTPRequest/ASINetworkQueue.m; sourceTree = "<group>"; };
+		FC42BFCD1623D32900AF63FB /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = Wahmbulance/ASIHTTPRequest/ASIProgressDelegate.h; sourceTree = "<group>"; };
+		FC42BFD71623D35700AF63FB /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "Wahmbulance/json-framework/NSObject+SBJson.h"; sourceTree = "<group>"; };
+		FC42BFD81623D35700AF63FB /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJson.m"; path = "Wahmbulance/json-framework/NSObject+SBJson.m"; sourceTree = "<group>"; };
+		FC42BFD91623D35700AF63FB /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = "Wahmbulance/json-framework/SBJson.h"; sourceTree = "<group>"; };
+		FC42BFDA1623D35700AF63FB /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = "Wahmbulance/json-framework/SBJsonParser.h"; sourceTree = "<group>"; };
+		FC42BFDB1623D35700AF63FB /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = "Wahmbulance/json-framework/SBJsonParser.m"; sourceTree = "<group>"; };
+		FC42BFDC1623D35700AF63FB /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParser.h; path = "Wahmbulance/json-framework/SBJsonStreamParser.h"; sourceTree = "<group>"; };
+		FC42BFDD1623D35700AF63FB /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = "Wahmbulance/json-framework/SBJsonStreamParser.m"; sourceTree = "<group>"; };
+		FC42BFDE1623D35700AF63FB /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAccumulator.h; path = "Wahmbulance/json-framework/SBJsonStreamParserAccumulator.h"; sourceTree = "<group>"; };
+		FC42BFDF1623D35700AF63FB /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAccumulator.m; path = "Wahmbulance/json-framework/SBJsonStreamParserAccumulator.m"; sourceTree = "<group>"; };
+		FC42BFE01623D35700AF63FB /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAdapter.h; path = "Wahmbulance/json-framework/SBJsonStreamParserAdapter.h"; sourceTree = "<group>"; };
+		FC42BFE11623D35700AF63FB /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAdapter.m; path = "Wahmbulance/json-framework/SBJsonStreamParserAdapter.m"; sourceTree = "<group>"; };
+		FC42BFE21623D35700AF63FB /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserState.h; path = "Wahmbulance/json-framework/SBJsonStreamParserState.h"; sourceTree = "<group>"; };
+		FC42BFE31623D35700AF63FB /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = "Wahmbulance/json-framework/SBJsonStreamParserState.m"; sourceTree = "<group>"; };
+		FC42BFE41623D35700AF63FB /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriter.h; path = "Wahmbulance/json-framework/SBJsonStreamWriter.h"; sourceTree = "<group>"; };
+		FC42BFE51623D35700AF63FB /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = "Wahmbulance/json-framework/SBJsonStreamWriter.m"; sourceTree = "<group>"; };
+		FC42BFE61623D35700AF63FB /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterAccumulator.h; path = "Wahmbulance/json-framework/SBJsonStreamWriterAccumulator.h"; sourceTree = "<group>"; };
+		FC42BFE71623D35700AF63FB /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterAccumulator.m; path = "Wahmbulance/json-framework/SBJsonStreamWriterAccumulator.m"; sourceTree = "<group>"; };
+		FC42BFE81623D35700AF63FB /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterState.h; path = "Wahmbulance/json-framework/SBJsonStreamWriterState.h"; sourceTree = "<group>"; };
+		FC42BFE91623D35700AF63FB /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = "Wahmbulance/json-framework/SBJsonStreamWriterState.m"; sourceTree = "<group>"; };
+		FC42BFEA1623D35700AF63FB /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonTokeniser.h; path = "Wahmbulance/json-framework/SBJsonTokeniser.h"; sourceTree = "<group>"; };
+		FC42BFEB1623D35700AF63FB /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = "Wahmbulance/json-framework/SBJsonTokeniser.m"; sourceTree = "<group>"; };
+		FC42BFEC1623D35700AF63FB /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonUTF8Stream.h; path = "Wahmbulance/json-framework/SBJsonUTF8Stream.h"; sourceTree = "<group>"; };
+		FC42BFED1623D35700AF63FB /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = "Wahmbulance/json-framework/SBJsonUTF8Stream.m"; sourceTree = "<group>"; };
+		FC42BFEE1623D35700AF63FB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = "Wahmbulance/json-framework/SBJsonWriter.h"; sourceTree = "<group>"; };
+		FC42BFEF1623D35700AF63FB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = "Wahmbulance/json-framework/SBJsonWriter.m"; sourceTree = "<group>"; };
+		FC42BFFD1623D5EC00AF63FB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Wahmbulance/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		FC42BFFE1623D5EC00AF63FB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Wahmbulance/MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
+		FC42C0021623D61100AF63FB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Wahmbulance/Reachability/Reachability.h; sourceTree = "<group>"; };
+		FC42C0031623D61100AF63FB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Wahmbulance/Reachability/Reachability.m; sourceTree = "<group>"; };
+		FC92D77B161AAF9700D9BCBA /* WAResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAResultsViewController.h; sourceTree = "<group>"; };
+		FC92D77C161AAF9700D9BCBA /* WAResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAResultsViewController.m; sourceTree = "<group>"; };
+		FC92D77E161AB1D700D9BCBA /* WAHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAHistoryViewController.h; sourceTree = "<group>"; };
+		FC92D77F161AB1D700D9BCBA /* WAHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAHistoryViewController.m; sourceTree = "<group>"; };
+		FC92D781161AB24A00D9BCBA /* WAContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAContactViewController.h; sourceTree = "<group>"; };
+		FC92D782161AB24A00D9BCBA /* WAContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAContactViewController.m; sourceTree = "<group>"; };
+		FCEE004F162A690900EB83C6 /* WALocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WALocation.h; sourceTree = "<group>"; };
+		FCEE0050162A690900EB83C6 /* WALocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WALocation.m; sourceTree = "<group>"; };
+		FCF430BE162B931600C274DC /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mail.png; path = Wahmbulance/img/mail.png; sourceTree = "<group>"; };
+		FCF430BF162B931600C274DC /* mail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mail@2x.png"; path = "Wahmbulance/img/mail@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC1EE6801619304100D48F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC42BFB01623CF1500AF63FB /* libz.1.1.3.dylib in Frameworks */,
+				FC42BFAC1623C7C600AF63FB /* MobileCoreServices.framework in Frameworks */,
+				FC42BFAA1623C75300AF63FB /* SystemConfiguration.framework in Frameworks */,
+				FC42BFA81623C74500AF63FB /* CFNetwork.framework in Frameworks */,
+				FC1EE6B21619307200D48F30 /* MapKit.framework in Frameworks */,
+				FC1EE6B01619306B00D48F30 /* CoreLocation.framework in Frameworks */,
+				FC1EE6881619304100D48F30 /* UIKit.framework in Frameworks */,
+				FC1EE68A1619304100D48F30 /* Foundation.framework in Frameworks */,
+				FC1EE68C1619304100D48F30 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC1EE6781619304100D48F30 = {
+			isa = PBXGroup;
+			children = (
+				FCF430C3162B932300C274DC /* img */,
+				FC42BFFC1623D5DD00AF63FB /* MBProgressHUD */,
+				FC42BFD61623D33E00AF63FB /* json-framework */,
+				FC42BFB91623D30A00AF63FB /* ASIHTTPRequest */,
+				FC1EE68D1619304100D48F30 /* Wahmbulance */,
+				FC1EE6861619304100D48F30 /* Frameworks */,
+				FC1EE6841619304100D48F30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC1EE6841619304100D48F30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC1EE6831619304100D48F30 /* Wahmbulance.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC1EE6861619304100D48F30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC42BFAF1623CF1500AF63FB /* libz.1.1.3.dylib */,
+				FC42BFAB1623C7C600AF63FB /* MobileCoreServices.framework */,
+				FC42BFA91623C75300AF63FB /* SystemConfiguration.framework */,
+				FC42BFA71623C74500AF63FB /* CFNetwork.framework */,
+				FC1EE6B11619307200D48F30 /* MapKit.framework */,
+				FC1EE6AF1619306B00D48F30 /* CoreLocation.framework */,
+				FC1EE6871619304100D48F30 /* UIKit.framework */,
+				FC1EE6891619304100D48F30 /* Foundation.framework */,
+				FC1EE68B1619304100D48F30 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC1EE68D1619304100D48F30 /* Wahmbulance */ = {
+			isa = PBXGroup;
+			children = (
+				FC1EE6961619304100D48F30 /* WAAppDelegate.h */,
+				FC1EE6971619304100D48F30 /* WAAppDelegate.m */,
+				FC1EE6991619304100D48F30 /* MainStoryboard.storyboard */,
+				FC1EE68E1619304100D48F30 /* Supporting Files */,
+				FC92D77B161AAF9700D9BCBA /* WAResultsViewController.h */,
+				FC92D77C161AAF9700D9BCBA /* WAResultsViewController.m */,
+				FC92D77E161AB1D700D9BCBA /* WAHistoryViewController.h */,
+				FC92D77F161AB1D700D9BCBA /* WAHistoryViewController.m */,
+				FC92D781161AB24A00D9BCBA /* WAContactViewController.h */,
+				FC92D782161AB24A00D9BCBA /* WAContactViewController.m */,
+				FCEE004F162A690900EB83C6 /* WALocation.h */,
+				FCEE0050162A690900EB83C6 /* WALocation.m */,
+			);
+			path = Wahmbulance;
+			sourceTree = "<group>";
+		};
+		FC1EE68E1619304100D48F30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC1EE68F1619304100D48F30 /* Wahmbulance-Info.plist */,
+				FC1EE6901619304100D48F30 /* InfoPlist.strings */,
+				FC1EE6931619304100D48F30 /* main.m */,
+				FC1EE6951619304100D48F30 /* Wahmbulance-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC42BFB91623D30A00AF63FB /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				FC42C0011623D60200AF63FB /* Reachability */,
+				FC42BFBA1623D32900AF63FB /* ASIAuthenticationDialog.h */,
+				FC42BFBB1623D32900AF63FB /* ASIAuthenticationDialog.m */,
+				FC42BFBC1623D32900AF63FB /* ASICacheDelegate.h */,
+				FC42BFBD1623D32900AF63FB /* ASIDataCompressor.h */,
+				FC42BFBE1623D32900AF63FB /* ASIDataCompressor.m */,
+				FC42BFBF1623D32900AF63FB /* ASIDataDecompressor.h */,
+				FC42BFC01623D32900AF63FB /* ASIDataDecompressor.m */,
+				FC42BFC11623D32900AF63FB /* ASIDownloadCache.h */,
+				FC42BFC21623D32900AF63FB /* ASIDownloadCache.m */,
+				FC42BFC31623D32900AF63FB /* ASIFormDataRequest.h */,
+				FC42BFC41623D32900AF63FB /* ASIFormDataRequest.m */,
+				FC42BFC51623D32900AF63FB /* ASIHTTPRequest.h */,
+				FC42BFC61623D32900AF63FB /* ASIHTTPRequest.m */,
+				FC42BFC71623D32900AF63FB /* ASIHTTPRequestConfig.h */,
+				FC42BFC81623D32900AF63FB /* ASIHTTPRequestDelegate.h */,
+				FC42BFC91623D32900AF63FB /* ASIInputStream.h */,
+				FC42BFCA1623D32900AF63FB /* ASIInputStream.m */,
+				FC42BFCB1623D32900AF63FB /* ASINetworkQueue.h */,
+				FC42BFCC1623D32900AF63FB /* ASINetworkQueue.m */,
+				FC42BFCD1623D32900AF63FB /* ASIProgressDelegate.h */,
+			);
+			name = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		FC42BFD61623D33E00AF63FB /* json-framework */ = {
+			isa = PBXGroup;
+			children = (
+				FC42BFD71623D35700AF63FB /* NSObject+SBJson.h */,
+				FC42BFD81623D35700AF63FB /* NSObject+SBJson.m */,
+				FC42BFD91623D35700AF63FB /* SBJson.h */,
+				FC42BFDA1623D35700AF63FB /* SBJsonParser.h */,
+				FC42BFDB1623D35700AF63FB /* SBJsonParser.m */,
+				FC42BFDC1623D35700AF63FB /* SBJsonStreamParser.h */,
+				FC42BFDD1623D35700AF63FB /* SBJsonStreamParser.m */,
+				FC42BFDE1623D35700AF63FB /* SBJsonStreamParserAccumulator.h */,
+				FC42BFDF1623D35700AF63FB /* SBJsonStreamParserAccumulator.m */,
+				FC42BFE01623D35700AF63FB /* SBJsonStreamParserAdapter.h */,
+				FC42BFE11623D35700AF63FB /* SBJsonStreamParserAdapter.m */,
+				FC42BFE21623D35700AF63FB /* SBJsonStreamParserState.h */,
+				FC42BFE31623D35700AF63FB /* SBJsonStreamParserState.m */,
+				FC42BFE41623D35700AF63FB /* SBJsonStreamWriter.h */,
+				FC42BFE51623D35700AF63FB /* SBJsonStreamWriter.m */,
+				FC42BFE61623D35700AF63FB /* SBJsonStreamWriterAccumulator.h */,
+				FC42BFE71623D35700AF63FB /* SBJsonStreamWriterAccumulator.m */,
+				FC42BFE81623D35700AF63FB /* SBJsonStreamWriterState.h */,
+				FC42BFE91623D35700AF63FB /* SBJsonStreamWriterState.m */,
+				FC42BFEA1623D35700AF63FB /* SBJsonTokeniser.h */,
+				FC42BFEB1623D35700AF63FB /* SBJsonTokeniser.m */,
+				FC42BFEC1623D35700AF63FB /* SBJsonUTF8Stream.h */,
+				FC42BFED1623D35700AF63FB /* SBJsonUTF8Stream.m */,
+				FC42BFEE1623D35700AF63FB /* SBJsonWriter.h */,
+				FC42BFEF1623D35700AF63FB /* SBJsonWriter.m */,
+			);
+			name = "json-framework";
+			sourceTree = "<group>";
+		};
+		FC42BFFC1623D5DD00AF63FB /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				FC42BFFD1623D5EC00AF63FB /* MBProgressHUD.h */,
+				FC42BFFE1623D5EC00AF63FB /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		FC42C0011623D60200AF63FB /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				FC42C0021623D61100AF63FB /* Reachability.h */,
+				FC42C0031623D61100AF63FB /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		FCF430C3162B932300C274DC /* img */ = {
+			isa = PBXGroup;
+			children = (
+				FCF430BE162B931600C274DC /* mail.png */,
+				FCF430BF162B931600C274DC /* mail@2x.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC1EE6821619304100D48F30 /* Wahmbulance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC1EE6AC1619304100D48F30 /* Build configuration list for PBXNativeTarget "Wahmbulance" */;
+			buildPhases = (
+				FC1EE67F1619304100D48F30 /* Sources */,
+				FC1EE6801619304100D48F30 /* Frameworks */,
+				FC1EE6811619304100D48F30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wahmbulance;
+			productName = Wahmbulance;
+			productReference = FC1EE6831619304100D48F30 /* Wahmbulance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC1EE67A1619304100D48F30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = FC1EE67D1619304100D48F30 /* Build configuration list for PBXProject "Wahmbulance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FC1EE6781619304100D48F30;
+			productRefGroup = FC1EE6841619304100D48F30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC1EE6821619304100D48F30 /* Wahmbulance */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC1EE6811619304100D48F30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1EE6921619304100D48F30 /* InfoPlist.strings in Resources */,
+				FC1EE69B1619304100D48F30 /* MainStoryboard.storyboard in Resources */,
+				FCF430C0162B931600C274DC /* mail.png in Resources */,
+				FCF430C1162B931600C274DC /* mail@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC1EE67F1619304100D48F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1EE6941619304100D48F30 /* main.m in Sources */,
+				FC1EE6981619304100D48F30 /* WAAppDelegate.m in Sources */,
+				FC92D77D161AAF9700D9BCBA /* WAResultsViewController.m in Sources */,
+				FC92D780161AB1D700D9BCBA /* WAHistoryViewController.m in Sources */,
+				FC92D783161AB24A00D9BCBA /* WAContactViewController.m in Sources */,
+				FC42BFCE1623D32900AF63FB /* ASIAuthenticationDialog.m in Sources */,
+				FC42BFCF1623D32900AF63FB /* ASIDataCompressor.m in Sources */,
+				FC42BFD01623D32900AF63FB /* ASIDataDecompressor.m in Sources */,
+				FC42BFD11623D32900AF63FB /* ASIDownloadCache.m in Sources */,
+				FC42BFD21623D32900AF63FB /* ASIFormDataRequest.m in Sources */,
+				FC42BFD31623D32900AF63FB /* ASIHTTPRequest.m in Sources */,
+				FC42BFD41623D32900AF63FB /* ASIInputStream.m in Sources */,
+				FC42BFD51623D32900AF63FB /* ASINetworkQueue.m in Sources */,
+				FC42BFF01623D35700AF63FB /* NSObject+SBJson.m in Sources */,
+				FC42BFF11623D35700AF63FB /* SBJsonParser.m in Sources */,
+				FC42BFF21623D35700AF63FB /* SBJsonStreamParser.m in Sources */,
+				FC42BFF31623D35700AF63FB /* SBJsonStreamParserAccumulator.m in Sources */,
+				FC42BFF41623D35700AF63FB /* SBJsonStreamParserAdapter.m in Sources */,
+				FC42BFF51623D35700AF63FB /* SBJsonStreamParserState.m in Sources */,
+				FC42BFF61623D35700AF63FB /* SBJsonStreamWriter.m in Sources */,
+				FC42BFF71623D35700AF63FB /* SBJsonStreamWriterAccumulator.m in Sources */,
+				FC42BFF81623D35700AF63FB /* SBJsonStreamWriterState.m in Sources */,
+				FC42BFF91623D35700AF63FB /* SBJsonTokeniser.m in Sources */,
+				FC42BFFA1623D35700AF63FB /* SBJsonUTF8Stream.m in Sources */,
+				FC42BFFB1623D35700AF63FB /* SBJsonWriter.m in Sources */,
+				FC42BFFF1623D5EC00AF63FB /* MBProgressHUD.m in Sources */,
+				FC42C0041623D61100AF63FB /* Reachability.m in Sources */,
+				FCEE0051162A690900EB83C6 /* WALocation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC1EE6901619304100D48F30 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC1EE6911619304100D48F30 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FC1EE6991619304100D48F30 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC1EE69A1619304100D48F30 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC1EE6AA1619304100D48F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC1EE6AB1619304100D48F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC1EE6AD1619304100D48F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wahmbulance/Wahmbulance-Prefix.pch";
+				INFOPLIST_FILE = "Wahmbulance/Wahmbulance-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FC1EE6AE1619304100D48F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wahmbulance/Wahmbulance-Prefix.pch";
+				INFOPLIST_FILE = "Wahmbulance/Wahmbulance-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC1EE67D1619304100D48F30 /* Build configuration list for PBXProject "Wahmbulance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1EE6AA1619304100D48F30 /* Debug */,
+				FC1EE6AB1619304100D48F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC1EE6AC1619304100D48F30 /* Build configuration list for PBXNativeTarget "Wahmbulance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1EE6AD1619304100D48F30 /* Debug */,
+				FC1EE6AE1619304100D48F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC1EE67A1619304100D48F30 /* Project object */;
+}

@@ -1,0 +1,9 @@
+# Xcode
+build/*
+xcuserdata
+Wahmbulance.xcodeproj/xcuserdata/*
+Wahmbulance.xcodeproj/project.xcworkspace/xcuserdata/*
+
+# Whatever else
+*.txt
+*.swp
